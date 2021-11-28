@@ -84,7 +84,7 @@ test.describe('levelsleep test', () => {
         let expectedPhone = "(343) 434-1343";
         await page.focus('#shippingAddress_phone');
         await page.type('#shippingAddress_phone', phone);
-        await expect(page.locator('#shippingAddress_phone')).toHaveValue(page);
+        await expect(page.locator('#shippingAddress_phone')).toHaveValue(expectedPhone);
 
         console.log("Step 5. Click on 'Continue billing' button");
         await page.click('#checkout_shipping_continue_btn');
