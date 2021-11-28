@@ -17,4 +17,3 @@ jobs:
         run: npm install -D @playwright/test
       - name: Run Playwright tests
         run: npx playwright test --project=chromium
-
